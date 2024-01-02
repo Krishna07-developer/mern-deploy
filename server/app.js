@@ -28,8 +28,8 @@ mongoose.connect(process.env.MONGODB_URI).then(()=>{
 
 // route
 
-app.get("/" , ()=>{
-    resizeBy.status(200).json({message : "Connected on backend"});
+app.get("/" , (req,res)=>{
+    res.status(200).json({message : "Connected on backend"});
 })
 
 
