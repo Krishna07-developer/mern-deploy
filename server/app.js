@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 const cors = require("cors");
 const corsOptions = {
-    origin : "http://localhost:3000"
+    origin : "https://mern-deploy-frontend-t6k6.onrender.com"
 }
 
 
