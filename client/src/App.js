@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:4000")
+    fetch("https://mern-deploy-g1jp.onrender.com")
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
   },[]);
